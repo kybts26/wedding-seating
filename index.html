@@ -8,40 +8,65 @@
 <body>
 
 <div class="container">
-  <h1>💍 Find Your Table</h1>
-  <p>Enter your name below</p>
 
-  <input id="nameInput" type="text" placeholder="Type your name">
+<h1>💍 Welcome</h1>
+<h2>Find Your Table</h2>
+<p>Enter your name below</p>
 
-  <button onclick="findTable()">Search</button>
+<input id="nameInput" type="text" placeholder="Your name">
 
-  <h2 id="result"></h2>
+<button onclick="findTable()">Search</button>
+
+<div id="result"></div>
+
 </div>
 
 <script src="guests.js"></script>
 
 <script>
+
 function findTable() {
-  const searchName = document
-    .getElementById("nameInput")
-    .value
-    .toLowerCase()
-    .trim();
 
-  const guest = guests.find(
-    person => person.name.toLowerCase() === searchName
-  );
+const searchName = document
+.getElementById("nameInput")
+.value
+.toLowerCase()
+.trim();
 
-  const result = document.getElementById("result");
+const matches = guests.filter(person =>
+person.name.toLowerCase().includes(searchName)
+);
 
-  if (guest) {
-    result.innerHTML = 
-      "🎉 Welcome, " + guest.name + "!<br>Your table is " + guest.table;
-  } else {
-    result.innerHTML = 
-      "Sorry, we couldn't find your name. Please check spelling.";
-  }
+const result = document.getElementById("result");
+
+if (matches.length === 1) {
+
+result.innerHTML =
+"🎉 Welcome, " + matches[0].name +
+"!<br><br>🪑 Your table is <b>" +
+matches[0].table +
+"</b>";
+
 }
+
+else if (matches.length > 1) {
+
+result.innerHTML = "Please choose your name:<br><br>" +
+matches.map(person =>
+"👤 " + person.name + " — " + person.table
+).join("<br>");
+
+}
+
+else {
+
+result.innerHTML =
+"Sorry, we couldn't find your name.";
+
+}
+
+}
+
 </script>
 
 </body>
