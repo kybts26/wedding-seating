@@ -1,13 +1,8 @@
 body {
   font-family: "Georgia", serif;
-  background-image: url("./DSC_7929.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: #f8f1e7;
+  text-align: center;
+  padding: 50px 20px;
   color: #4a3b32;
 }
 
