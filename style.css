@@ -1,6 +1,9 @@
 body {
   font-family: "Georgia", serif;
-  background: #faf7f2;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   text-align: center;
   padding: 50px 20px;
   color: #4a3b32;
