@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Find Your Wedding Table</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+  <h1>💍 Find Your Table</h1>
+  <p>Enter your name below</p>
+
+  <input id="nameInput" type="text" placeholder="Type your name">
+
+  <button onclick="findTable()">Search</button>
+
+  <h2 id="result"></h2>
+</div>
+
+<script src="guests.js"></script>
+
+<script>
+function findTable() {
+  const searchName = document
+    .getElementById("nameInput")
+    .value
+    .toLowerCase()
+    .trim();
+
+  const guest = guests.find(
+    person => person.name.toLowerCase() === searchName
+  );
+
+  const result = document.getElementById("result");
+
+  if (guest) {
+    result.innerHTML = 
+      "🎉 Welcome, " + guest.name + "!<br>Your table is " + guest.table;
+  } else {
+    result.innerHTML = 
+      "Sorry, we couldn't find your name. Please check spelling.";
+  }
+}
+</script>
+
+</body>
+</html>
