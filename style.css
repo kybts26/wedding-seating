@@ -1,23 +1,23 @@
 body {
   font-family: "Georgia", serif;
-  background-image: url("DSC_7929.jpg");
+  background-image: url("wedding-photo.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  text-align: center;
-  padding: 50px 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #4a3b32;
 }
 
 .container {
   max-width: 420px;
-  margin: auto;
-  background: white;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.9);
   padding: 35px 25px;
   border-radius: 20px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
-
 h1 {
   font-size: 36px;
   margin-bottom: 10px;
