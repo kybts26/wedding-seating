@@ -108,7 +108,7 @@ const guests = [
 { name: "Vanna", table: "12" },
 { name: "Diana", table: "12" },
 { name: "A. Lâm", table: "12" },
-{ name: "C. Dung (Chú Rể)", table: "12" },
+{ name: "C. Dung (Vợ A. Lâm)", table: "12" },
 { name: "Duyên", table: "13" },
 { name: "Giang", table: "13" },
 { name: "Vợ Giang", table: "13" },
