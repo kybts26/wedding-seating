@@ -119,7 +119,7 @@ const guests = [
 { name: "Trang (Ca Đoàn)", table: "13" },
 { name: "C. Ánh", table: "13" },
 { name: "Loan Bề Trên", table: "13" },
-{ name: "Tuyết", table: "14" },
+{ name: "Tuyết (GDTH)", table: "14" },
 { name: "Bộ", table: "14" },
 { name: "C. Hạnh (GDTH)", table: "14" },
 { name: "A. Tốt", table: "14" },
