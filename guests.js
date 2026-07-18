@@ -146,7 +146,7 @@ const guests = [
 { name: "Xuân", table: "16" },
 { name: "Sửu", table: "16" },
 { name: "C. Bảy", table: "16" },
-{ name: "C. Chi", table: "16" },
+{ name: "C. Chi (GDTH)", table: "16" },
 { name: "C. Phúc", table: "16" },
 { name: "C. Thơm", table: "16" },
 { name: "Phương", table: "17" },
