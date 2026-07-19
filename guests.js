@@ -1,7 +1,7 @@
 const guests = [
 { name: "Cha Toản", table: "2" },
 { name: "Cha Cao", table: "2" },
-{ name: "A. Việt", table: "2" },
+{ name: "Ông Cố Việt", table: "2" },
 { name: "C. Tuyết", table: "2" },
 { name: "Cha Phó", table: "2" },
 { name: "C. Tú Anh", table: "2" },
